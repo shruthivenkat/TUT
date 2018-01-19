@@ -1,0 +1,27 @@
+/*You have been given an array of size 
+N
+N consisting of integers. In addition you have been given an element 
+M
+M you need to find and print the index of the last occurrence of this element 
+M
+M in the array if it exists in it, otherwise print -1. Consider this array to be 1 indexed.*/
+
+#include<stdio.h>
+void main()
+{
+    long int N,M;
+    scanf("%d %d",&N,&M);
+    long int i,A[N],index;
+    for(i=0;i<N;i++)
+    {
+        scanf("%ld",&A[i]);
+    }
+    for(i=1;i<N;i++)
+    {
+        if(M==A[i])
+        {
+            index=i;
+        }
+    }
+    printf("%d",index+1);
+}
