@@ -1,0 +1,28 @@
+ import java.io.BufferedReader; //you dont need it here - used to get a string 
+ //syn: BufferedReader buf = new BufferedReader(inp);
+ //the argument shld contain the val of InputStreamReader
+import java.io.InputStreamReader; //you dont need it here - used to get numericals
+//syn: InputStreamReader inp = new InputStreamReader(System.in);
+import java.io.*;
+import java.util.*;
+import java.util.Scanner.*;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        
+       int N,i;
+        Scanner inp = new Scanner(System.in);
+        N = inp.nextInt();
+        int A[] = new int[N];
+        for(i=0;i<N;i++)
+        {
+          
+            A[i]=inp.nextInt();
+        }
+        for(i=N-1;i>=0;i--)
+        {
+            System.out.println(A[i]);
+        }
+    }
+   
+}
+ 
