@@ -1,0 +1,22 @@
+//usage of long int
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+int main()
+{
+    int N,i;
+    long int sum=000000000;
+   // long *arr=(long *)malloc(100*sizeof(long));
+    scanf("%d",&N);
+    int arr[N];
+    for(i=0;i<N;i++)
+    {
+        scanf("%d",&arr[i]);
+        sum+=arr[i];
+    }
+    printf("%ld",sum);
+}
