@@ -1,0 +1,17 @@
+//to print any text
+print("hello world");
+
+//to input values
+a=int(input());
+
+//to print absolute vals
+print(a);
+
+//Read two integers and print two lines. The first line should contain integer division, a//b .
+//The second line should contain float division a/b.
+a=int(input());
+b=float(input());
+addint=a//b;
+addfoat=a/b;
+print(addint);
+print(addfoat);
