@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define MAX 10
+int a[MAX];
+int front=-1,rear=-1;
+int insert(int data)
+{
+    if(rear==MAX-1)
+    {
+        printf("queue full");
+        return 0;
+    }
+    else
+    {
+        a[rear++]=data;
+    }
+}
+int del()
+{
+    int val;
+    if(front==MAX-1)
+    {
+        printf("queue empty");
+    }
+    else
+    {
+        val=a[front++];
+        printf("\n%d",val);
+    }
+}
+
+int main()
+{
+    int n,u;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&u);
+        insert(u);
+    }
+    del();
+    insert(100);
+    del();
+    del();
+    return 0;
+}
